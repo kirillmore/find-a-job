@@ -1,0 +1,1110 @@
+//epam primary colors
+@epamblue: #76cdd8;
+@limegreen: #cedb56;
+@graphite: #222222;
+@white: #ffffff;
+@coral: #d35d47;
+@brightblue: #008ace;
+@sharpblue: #39c2d7;
+@darkblue: #263852;
+@lightgray: #cccccc;
+@darkgray: #464547;
+//other palette
+@darkblue: #263852;
+@greenground: #2E5D5D;
+@greentree: #336666;
+@greenactive: #4FB9AC;
+@orange: #F45A2A;
+@brightblue: #018CD1;
+@sharpblue: #39C2D7;
+@limegreen: #CEDB56;
+
+.text-darkblue {
+  color: @darkblue  !important;
+}
+
+.text-orange {
+  color: @orange;
+}
+
+.text-black {
+  color: black !important;
+}
+
+.fancybox-slide--iframe .fancybox-content,
+.fancybox-iframe {
+  background-color: transparent !important;
+}
+
+.fancybox-slide {
+  padding: 20px 0;
+}
+
+.fancybox-content {
+  // padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.progress-bar__orange {
+  background-color: @orange;
+}
+
+.animation-zoomin:hover,
+.animation-zoomin:active {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+@font-face {
+  font-family: 'Museo Cyrl';
+  src: local('Museo Cyrl 500'), local('MuseoCyrl-500'), url('../font/Museocyrl500.woff2') format('woff2'), url('../font/Museocyrl500.woff') format('woff'), url('../font/Museocyrl500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Cyrl 700';
+  src: local('Museo Cyrl 700'), local('MuseoCyrl-700'), url('../font/Museocyrl700.woff2') format('woff2'), url('../font/Museocyrl700.woff') format('woff'), url('../font/Museocyrl700.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+#preintro {
+  align-items: center;
+  background-color: @darkblue;
+  color: @white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  z-index: 9999;
+}
+
+body {
+  background-color: @darkblue;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a {
+  color: @orange;
+}
+
+*:focus {
+  outline: none;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../img/bg-header.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 9998;
+
+  .logo {
+    width: 100%;
+    max-width: 560px;
+    padding: 0 40px;
+    z-index: 2000;
+  }
+}
+
+#main {
+  padding-top: 160px;
+  padding-bottom: 100px;
+
+  .col {
+    // border: 1px solid red;
+  }
+
+  .main__row {
+    padding: 0;
+    max-width: 1200px;
+    margin-bottom: 0;
+    margin-top: -20px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
+
+    // border: 1px solid yellow;
+    .container-xxl {
+      max-width: 960px;
+    }
+  }
+
+  .row__secondary {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main_tree__img {
+    width: 100%;
+  }
+
+  .main_tree__cell {
+    padding: 0;
+    // min-height: 304px;
+    text-align: center;
+    z-index: 200;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  #day9 {
+    position: relative;
+    z-index: 8000;
+
+    .tree9__add {
+      position: absolute;
+      width: 150%;
+      height: 100%;
+      top: 44%;
+      left: 26%;
+      display: none;
+      z-index: 8001;
+    }
+  }
+
+  .main_tree__cell__animate:hover,
+  .main_tree__cell__animate:active {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+
+  .main__row__1,
+  .main__row__7,
+    {
+    background-image: url(../img/ground_1.svg);
+  }
+
+  .main__row__2,
+  .main__row__8 {
+    background-image: url(../img/ground_2.svg);
+  }
+
+  .main__row__3 {
+    background-image: url(../img/ground_3.svg);
+  }
+
+  .main__row__4 {
+    background-image: url(../img/ground_4.svg);
+    margin-top: 0;
+  }
+
+  .main__row__5 {
+    background-image: url(../img/ground_5.svg);
+  }
+
+  .main__row__6 {
+    background-image: url(../img/ground_6.svg);
+  }
+
+  .more-elements {
+    position: absolute;
+    z-index: 100;
+  }
+
+  .more-elements2 {
+    text-align: right;
+    top: 5%;
+
+    img {
+      width: 30%;
+      height: auto;
+    }
+  }
+
+  .more-elements3 {
+    text-align: left;
+    padding-left: 6%;
+    top: 0;
+
+    img {
+      width: 30%;
+      height: auto;
+    }
+  }
+
+  .more-elements4 {
+    text-align: right;
+    right: 10%;
+    top: 0;
+
+    img {
+      width: 30%;
+      height: auto;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
+
+  .more-elements5 {
+    text-align: left;
+    // padding-left: 38%;
+    top: 0;
+
+    img {
+      width: 30%;
+      height: auto;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  }
+
+  .more-elements7 {
+    text-align: right;
+    top: 5%;
+
+    img {
+      width: 30%;
+      height: auto;
+    }
+  }
+
+}
+
+#secondpage {
+  padding-top: 160px;
+  padding-bottom: 100px;
+
+  .container {
+    background-color: @white;
+  }
+}
+
+#footer {
+  background-color: @graphite;
+  color: @white;
+  padding: 60px 0;
+
+  .logo {
+    width: 100%;
+    max-width: 385px;
+  }
+
+  hr {
+    margin-top: 55px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.advent__body {
+  max-width: 900px;
+  // background-image: url(../img/advent-plate.svg);
+  background-repeat: no-repeat;
+  background-size: 98% 98%;
+  background-color: transparent;
+  overflow: hidden;
+
+  #advent {
+    position: relative;
+    max-width: 1080px;
+
+    border-color: orange;
+    border-style: solid;
+    border-width: 50px 50px 50px 50px;
+    border-image: url(../img/window_group.svg) 50 stretch;
+    border-image-slice: 0 fill;
+
+    .advent__body__close {
+      position: absolute;
+      top: 50px;
+      right: 80px;
+    }
+  }
+
+  .container-fluid {
+    padding: 20px 20px;
+  }
+
+  .advent__sidebar {
+    background-image: url(../img/advents/advent-bg.svg);
+    background-repeat: repeat-y;
+    background-size: contain;
+
+    .advent__sidebar__coverimg {
+      width: 100%;
+      margin-top: 25px;
+      padding: 20px;
+    }
+  }
+
+  .advent__main {
+    font-family: 'Museo Cyrl';
+    padding: 40px 40px 40px 0;
+
+    .advent__main__date {
+      margin-top: 30px;
+      color: @darkblue;
+      font-size: 32px;
+      margin-bottom: 0;
+    }
+
+    .advent__main__title {
+      color: @orange;
+      font: 46px/46px 'Museo Cyrl';
+      margin-bottom: 30px;
+    }
+
+    p {
+      font: 16px/18px 'Source Sans Pro';
+      color: @darkblue;
+    }
+
+    p.accent {
+      font-family: 'Museo Cyrl 700';
+      color: @darkblue;
+      font-size: 24px;
+    }
+
+  }
+
+  .cloud {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: table-cell;
+    font-family: 'Source Sans Pro';
+
+    span {
+      padding: 20px;
+      display: block;
+      text-decoration: underline;
+    }
+
+    .tdnone {
+      text-decoration: none;
+    }
+  }
+
+  .cloud__sm {
+    span {
+      padding: 10px 20px !important;
+    }
+  }
+
+  .cloud__xs {
+    span {
+      padding: 5px 10px !important;
+    }
+  }
+
+  .subheader {
+    font-size: 130% !important;
+    line-height: 22px !important;
+    color: @orange  !important;
+    font-weight: bold !important;
+  }
+
+  .subheader__black {
+    font-size: 20px !important;
+    color: @darkblue  !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+  }
+
+  .subheader__orange {
+    font-size: 20px !important;
+    color: @orange  !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+  }
+
+  .cloud__pointer {
+    cursor: pointer;
+  }
+
+  .question1,
+  .question2,
+  .question3,
+  .question4,
+  .question5,
+  .question6,
+  .question7,
+  .question8 {
+    cursor: pointer;
+  }
+
+  .cloud-nowrap {
+    white-space: nowrap;
+  }
+
+  .cloud-greenactive {
+    background-image: url(../img/cloud_greenactive.svg);
+    color: @darkblue;
+  }
+
+  .cloud-orange {
+    background-image: url(../img/cloud_orange.svg);
+    color: @white;
+  }
+
+  .cloud-lightgray {
+    background-image: url(../img/cloud_lightgray.svg);
+    padding: 40px;
+  }
+
+  .cloud-lightgray_sm {
+    padding: 15px !important;
+  }
+
+  .cloud-answer {
+    min-width: 150px;
+    background-image: url(../img/cloud_answer.svg);
+  }
+
+  .cloud-darkblue {
+    background-image: url(../img/cloud_darkblue.svg);
+    color: @white;
+  }
+
+  .cloud-limegreen {
+    background-image: url(../img/cloud_limegreen.svg);
+    color: @white;
+  }
+
+  .cloud-sharpblue {
+    background-image: url(../img/cloud_sharpblue.svg);
+    color: @white;
+  }
+
+  .cloud-gray {
+    background-image: url(../img/cloud_gray.svg);
+    color: @white;
+  }
+
+  .cloud-middlegray {
+    background-image: url(../img/cloud_middlegray.svg);
+    color: @orange;
+  }
+
+
+  .cloud-answer-success {
+    background-image: url(../img/cloud_answer-success.svg);
+    color: @white;
+    min-width: 150px;
+  }
+
+  .cloud-answer-fail {
+    background-image: url(../img/cloud_answer-fail.svg);
+    color: @white;
+    min-width: 150px;
+  }
+
+  #ans-success,
+  #ans-fail {
+    color: white;
+    font-size: 32px;
+  }
+
+  #playlist {
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+
+    div {
+      a {
+        color: @darkblue;
+        text-decoration: none;
+      }
+
+      // white-space: nowrap;
+    }
+
+    div.active {
+      a {
+        color: @orange;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+
+  audio {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  #play_next:hover {
+    content: url(../img/play_next_active.svg);
+    cursor: pointer;
+  }
+
+  #play_prev:hover {
+    content: url(../img/play_prev_active.svg);
+    cursor: pointer;
+  }
+
+  #play_next_mob:hover {
+    content: url(../img/play_next_mob_active.svg);
+    cursor: pointer;
+  }
+
+  #play_prev_mob:hover {
+    content: url(../img/play_prev_mob_active.svg);
+    cursor: pointer;
+  }
+}
+
+.advent__page {
+  background-color: @darkblue  !important;
+  max-width: 100% !important;
+  overflow: auto;
+
+  #header {
+    position: relative !important;
+    z-index: 5000;
+  }
+
+  #advent {
+    max-width: 100% !important;
+    border-image: url(../img/window_group_page.svg) 50 stretch !important;
+    border-image-slice: 0 fill;
+  }
+}
+
+.fancybox-content {
+  border-radius: 20px;
+}
+
+.fancybox-toolbar {
+  display: none;
+}
+
+.fancybox-iframe {
+  border-radius: 20px;
+}
+
+
+
+ul.bullet-orange {
+  list-style: none;
+}
+
+ul.bullet-orange li::before {
+  content: "\2022";
+  color: @orange;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul.steps {
+  list-style-type: none;
+  counter-reset: steps;
+  padding: 0;
+  font-family: sans-serif;
+  margin-bottom: 0;
+
+  li {
+    padding: 0 0 20px 50px;
+    position: relative;
+    margin: 0;
+  }
+
+  li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: counter(steps);
+    counter-increment: steps;
+    border-radius: 50%;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: @orange;
+    color: @white;
+  }
+
+  li:before {
+    position: absolute;
+    left: 13px;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 2px dashed #39C2D7;
+  }
+
+  li:last-of-type:before {
+    border: none;
+    padding-bottom: 0;
+  }
+}
+
+
+
+
+//media
+@screen-xs-max: 575px;
+@screen-sm-min: 576px;
+@screen-sm-max: 767px;
+@screen-md-min: 768px;
+@screen-md-max: 991px;
+@screen-lg-min: 992px;
+@screen-lg-max: 1199px;
+@screen-xl-min: 1200px;
+@screen-xl-max: 1399px;
+@screen-xxl-min: 1400px;
+
+
+
+// This media query is used for: iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X
+/* 2340x1080 pixels at 476ppi */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+  #advent {
+    border-style: none !important;
+    border-image-outset: 0px 110px !important;
+  }
+
+}
+
+// iPhone 13 and iPhone 13 Pro
+// This media query is used for: iPhone 13, iPhone 12 and iPhone 12 Pro
+/* 2532x1170 pixels at 460ppi */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+
+  #advent {
+    border-style: none !important;
+    border-image-outset: 0px 110px !important;
+  }
+
+}
+
+// iPhone 13 Pro Max
+// This media query is used for: iPhone 13 Pro Max and iPhone 12 Pro Max
+/* 2778x1284 pixels at 458ppi */
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+
+  #advent {
+    border-style: none !important;
+    border-image-outset: 0px 110px !important;
+  }
+
+}
+
+// Older iPhones (X, Xs, XR and 11)
+// iPhone 11
+// This media query is used for: iPhone 11 and iPhone XR
+/* 1792x828px at 326ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+
+  #advent {
+    border-style: none !important;
+    border-image-outset: 0px 110px !important;
+  }
+
+}
+
+// iPhone 11 Pro/
+/* 2436x1125px at 458ppi */
+// This media query is used for: iPhone 13 mini, iPhone 12 mini, iPhone 11 Pro, iPhone Xs, and iPhone X
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+  #advent {
+    border-style: none !important;
+    border-image-outset: 0px 110px !important;
+  }
+
+}
+
+// iPhone 11 Pro Max
+/* 2688x1242px at 458ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+
+  #advent {
+    border-style: none !important;
+    border-image-outset: 0px 110px !important;
+  }
+
+}
+
+
+//0-575
+@media (max-width: @screen-xs-max) {
+  .fancybox-slide {
+    padding: 160px 0 !important;
+  }
+
+  .fancybox-bg {
+    background-color: transparent;
+  }
+
+  #header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #main {
+    padding-top: 120px;
+    padding-bottom: 20px;
+  }
+
+  .main__row {
+    background-size: 230% auto !important;
+    padding-bottom: 60px;
+    margin-bottom: 0 !important;
+  }
+
+  .main__row__1 {
+    background-position: center 85% !important;
+  }
+
+  .main__row__2 {
+    background-image: url(../img/ground_1.svg) !important;
+    background-position: center 85% !important;
+  }
+
+  .main__row__3 {
+    background-image: url(../img/ground_1.svg) !important;
+    background-position: center 100% !important;
+  }
+
+  .main__row__4 {
+    background-image: url(../img/ground_4.svg) !important;
+  }
+
+  .main__row__5 {
+    background-image: url(../img/ground_5.svg) !important;
+    background-position: center 76% !important
+  }
+
+  .main__row__6 {
+    background-image: url(../img/ground_5.svg) !important;
+    background-position: center 85% !important
+  }
+
+  .main__row__7 {
+    background-image: url(../img/ground_5.svg) !important;
+    background-position: center 86% !important
+  }
+
+  .main__row__8 {
+    background-image: url(../img/ground_3.svg) !important;
+    background-position: center 76% !important
+  }
+
+  #day13 {
+    margin-top: -30px;
+  }
+
+  #footer {
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .advent__body {
+
+    #advent {
+      border-style: none !important;
+      border-image-outset: 0px 110px;
+      border-width: 8px;
+    }
+
+    .advent__body__close {
+      top: 45px !important;
+      right: 20px !important;
+    }
+
+    .advent__main {
+      padding: 10px;
+
+      .advent__main__date {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      .advent__main__title {
+        font: 30px/32px 'Museo Cyrl';
+        margin-bottom: 20px !important;
+        margin-top: 0 !important;
+      }
+
+      p {
+        font: 16px/18px 'Source Sans Pro';
+        margin-bottom: 8px;
+      }
+
+      p.accent {
+        font-size: 18px;
+      }
+
+      .advent__sidebar__coverimg {
+        padding: 0 30px 10px 30px;
+      }
+    }
+  }
+
+  .advent__page {
+    .advent__main {
+      padding: 10px;
+
+      .advent__main__date {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      .advent__main__title {
+        font: 30px/32px 'Museo Cyrl';
+        margin-bottom: 20px !important;
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  #player__line {
+    .col-1 {
+      width: 12% !important;
+    }
+
+    .col-10 {
+      width: 76% !important;
+    }
+  }
+
+}
+
+//576-767
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+  .fancybox-slide {
+    // padding: 160px 0 !important;
+  }
+
+  .fancybox-bg {
+    background-color: transparent;
+  }
+
+
+  .advent__body {
+    #advent {
+      border-style: none !important;
+      border-image-outset: 0px 110px !important;
+    }
+
+    .advent__body__close {
+      top: 50px !important;
+      right: 50px !important;
+    }
+
+    .advent__main {
+      padding: 10px;
+
+      .advent__main__date {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      .advent__main__title {
+        font: 30px/30px 'Museo Cyrl';
+        margin-bottom: 10px;
+      }
+
+      p {
+        font: 13px/15px 'Source Sans Pro';
+        margin-bottom: 8px;
+      }
+
+      p.accent {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .advent__page {
+    #advent {
+      border-image-outset: inherit !important;
+      border-style: solid !important;
+    }
+
+  }
+
+  .main__row__3 {
+    background-position: center 87% !important;
+  }
+
+  .main__row__4 {
+    background-position: center 87% !important;
+  }
+
+  #header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #main {
+    padding-top: 153px;
+  }
+
+  .main__row {
+    background-size: 150% auto !important;
+    padding-bottom: 40px;
+  }
+}
+
+//768-991
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .main__row {
+    background-size: 150% auto !important;
+    padding-bottom: 30px;
+  }
+
+  .advent__body {
+    .advent__main {
+      padding: 10px;
+
+      .advent__main__date {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .advent__main__title {
+        font: 28px/28px 'Museo Cyrl';
+        margin-bottom: 10px;
+      }
+
+      p {
+        font: 16px/18px 'Source Sans Pro';
+        margin-bottom: 8px;
+      }
+
+      p.accent {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .main__row__3 {
+    background-position: center 86% !important;
+  }
+
+  .main__row__4 {
+    background-position: center 89% !important;
+  }
+
+}
+
+//992-1199
+@media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+  .main__row {
+    background-size: 100% auto !important;
+    padding-bottom: 20px;
+  }
+
+  .main__row__1 {
+    background-position: center 100% !important;
+  }
+
+  .main__row__2 {
+    // background-position: center 79% !important;
+  }
+
+  .main__row__3 {
+    background-position: center 80% !important;
+  }
+
+  .main__row__4 {
+    background-position: center 89% !important;
+  }
+
+  .main__row__5 {
+    background-position: center 90% !important
+  }
+
+
+}
+
+//1200-1399
+@media (min-width: @screen-xl-min) and (max-width: @screen-xl-max) {
+  .main__row {
+    background-size: 100% auto !important;
+    padding-bottom: 10px;
+  }
+
+  .main__row__1 {
+    background-position: center 100% !important;
+  }
+
+  .main__row__2 {
+    // background-position: center 79% !important;
+  }
+
+  .main__row__3 {
+    background-position: center 91% !important;
+  }
+
+  .main__row__4 {
+    background-position: center 87% !important;
+  }
+
+  .main__row__5 {
+    background-position: center 76% !important
+  }
+
+}
+
+//1400-*
+@media (min-width: @screen-xxl-min) {
+
+  .main__row {
+    background-size: 100% auto !important;
+    padding-bottom: 0 !important;
+  }
+
+  .main__row__1 {
+    background-position: center 100% !important;
+  }
+
+  .main__row__2 {
+    // background-position: center 79% !important;
+  }
+
+  .main__row__3 {
+    background-position: center 83% !important;
+  }
+
+  .main__row__4 {
+    background-position: center 90% !important;
+  }
+
+  .main__row__5 {
+    background-position: center 86% !important
+  }
+
+  #day6 {
+    margin-bottom: -20px;
+  }
+
+  #day13 {
+    margin-top: -10px;
+  }
+
+  #day14 {
+    margin-top: -10px;
+  }
+}

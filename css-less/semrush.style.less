@@ -1,0 +1,330 @@
+//vars
+@unit: 15px;
+
+//colors
+@darkindigo: #421983;
+@yellow: #FFE84D;
+@lightgray: #929292;
+@orange: #FF642D;
+@blue: #0070CC;
+@pink: #FF7AD1;
+
+//mixins
+
+//@font-face
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@900&family=Source+Sans+Pro&display=swap');
+
+//styles
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+section {
+  background-color: @blue;
+}
+
+body.admin {
+  background-color: white !important;
+}
+
+#temporary {
+  background-color: @blue;
+}
+
+#header {
+
+  .logo {
+    max-width: 292px;
+    margin: 60px 0;
+  }
+}
+
+#about {
+  .heart {
+    color: @orange;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p.header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+#inputform {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  input[type="text"],
+  input[type="submit"] {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 20px;
+    border-radius: 7px;
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    margin: 5px 0;
+  }
+
+  input[type="text"] {
+    margin-right: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  input[type="submit"] {
+    background-color: @yellow;
+  }
+
+  #success--message {
+    display: none;
+    border: 1px solid @orange;
+    padding: 5px 15px;
+    border-radius: 7px;
+  }
+
+  .butt {
+    width: 100%;
+  }
+}
+
+#cloudwords {
+  // min-height: 60vh;
+  // min-height: 600px;
+  min-height: 100vh;
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: repeat-x;
+  // padding-bottom: 60px;
+  position: relative;
+
+  .stickyparent {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .stickybg {
+    min-height: 100vh;
+    background-image: url(img/bg-brick.svg);
+    background-position: top center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    // border-bottom: 1px solid #989EA4;
+    // border-top: 1px solid #717D85;
+    color: #FFF;
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+    margin: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 0;
+    margin-bottom: 40px;
+  }
+
+  .container-fluid {
+    position: relative;
+    z-index: 9999;
+  }
+
+  .nowadded {
+    // text-shadow: 1px 1px 10px @yellow;
+  }
+
+}
+
+#wordlist {
+  font-size: 100%;
+  padding: 60px 0;
+}
+
+#footer {
+  background-color: black;
+  padding: 35px;
+  color: @lightgray;
+  font-size: 14px;
+
+  .logo {
+    max-width: 224px;
+  }
+}
+
+#admin {
+  background-color: white;
+  color: black;
+  min-height: ~"calc(100vh - 90px)";
+
+  .logo {
+    max-width: 292px;
+    margin: 60px 0;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+#stat {
+  background-color: white;
+  color: black;
+  padding: 40px;
+}
+
+.word {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  margin: 5px;
+}
+
+.word2 {
+  // margin: 3px 10px;
+  padding: 16px 10px;
+  // background-color: rgba(255, 255, 255, 0.1);
+  line-height: 85%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#wordcloud_interests {
+  height: 600px;
+}
+
+//media
+@screen-xs-max: 575px;
+@screen-sm-min: 576px;
+@screen-sm-max: 767px;
+@screen-md-min: 768px;
+@screen-md-max: 991px;
+@screen-lg-min: 992px;
+@screen-lg-max: 1199px;
+@screen-xl-min: 1200px;
+@screen-xl-max: 1399px;
+@screen-xxl-min: 1400px;
+@screen-xxl-custom: 1920px;
+
+//0-575
+@media (max-width: @screen-xs-max) {
+  .inputform--main {
+    background-color: @pink;
+  }
+
+  #inputform {
+    padding-bottom: 0;
+
+    input[type="text"],
+    input[type="submit"] {
+      width: 100%;
+      max-width: unset;
+    }
+
+  }
+
+  #cloudwords {
+    min-height: unset;
+    background-image: url(img/bg-balls.svg);
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  #wordlist {
+    padding: 15px 0 50px 0;
+    font-size: 60%;
+  }
+
+  .word2 {
+    padding: 8px 10px;
+  }
+
+}
+
+//576-767
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+  .inputform--main {
+    background-color: @pink;
+  }
+
+  #inputform {
+    padding-bottom: 0;
+
+    input[type="text"],
+    input[type="submit"] {
+      width: 100%;
+      max-width: unset;
+    }
+
+  }
+
+  #cloudwords {
+    min-height: unset;
+    background-image: url(img/bg-balls.svg);
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  #wordlist {
+    padding: 15px 0 50px 0;
+    font-size: 70%;
+  }
+
+  .word2 {
+    padding: 8px 10px;
+  }
+
+}
+
+//768-991
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  #wordlist {
+    font-size: 80%;
+  }
+}
+
+//992-1199
+@media (min-width: @screen-lg-min) and (max-width: @screen-lg-max) {
+
+  #wordlist {
+    font-size: 100%;
+  }
+}
+
+//1200-1399
+@media (min-width: @screen-xl-min) and (max-width: @screen-xl-max) {
+
+  #wordlist {
+    font-size: 120%;
+  }
+}
+
+//1400-*
+@media (min-width: @screen-xxl-min) {
+
+  #wordlist {
+    font-size: 160%;
+  }
+}
+
+//1920-*
+@media (min-width: @screen-xxl-custom) {
+  #cloudwords {
+    // background-image: url(img/bg-brick.svg) !important;
+    // background-repeat: repeat-x !important;
+    // background-size: auto;
+  }
+
+  #wordlist {
+    font-size: 200%;
+  }
+}
